@@ -1,3 +1,4 @@
+
 // Riferimento endpoint
 const endPoint = "https://lanciweb.github.io/demo/api/pictures/";
 
@@ -6,6 +7,7 @@ const containerOutput = document.getElementById("container");
 
 // Chiamiamo ajax all'endpoint
 axios.get(endPoint)
+
     .then(response =>{
 
         // output che verrà a schermo
@@ -37,6 +39,7 @@ axios.get(endPoint)
             </div>`
         });
 
+        //Inseriamo le card in pagina 
         containerOutput.innerHTML = cardsOutput;
 
     })

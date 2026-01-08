@@ -64,3 +64,15 @@ header {
     top: -25px;
     transform: translateX(-50%);
 }
+
+@media screen and (max-width: 790px) {
+    .card {
+        flex-basis: calc((100% - 2rem) / 2);
+    }
+}
+ 
+@media screen and (max-width: 510px) {
+    .card {
+        flex-basis: 100%;
+    }
+}

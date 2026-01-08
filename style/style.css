@@ -53,3 +53,14 @@ header {
     font-family: 'Edu Tas Beginner', sans-serif;
     padding-top: 1rem;
 }
+
+.pin {
+    position: relative;
+}
+
+.img-pin {
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    transform: translateX(-50%);
+}

@@ -35,3 +35,21 @@ header {
     margin-top: 1.5rem;
     padding: 0.5rem 1rem ;
 }
+
+.img-card {
+    max-width: 100%;
+}
+
+.img-container {
+    padding-top: 2rem;
+}
+
+.title-card {
+    font-family: 'Sometype Mono', 'monospace';
+    padding-top: 1rem;
+}
+
+.date-card {
+    font-family: 'Edu Tas Beginner', sans-serif;
+    padding-top: 1rem;
+}

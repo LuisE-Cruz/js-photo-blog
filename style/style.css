@@ -70,12 +70,39 @@ header {
     transform: translateX(-50%);
 }
 
-#show-photo {
+/* Overlay */
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    gap: 1rem;
 }
+
+#img-size{
+    height: 600px;
+    width: 600px;
+}
+
+#close-photo{
+    background-color: red;
+    transform: scale(1);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+
+
+
 
 /* Responsive */
 @media screen and (max-width: 790px) {

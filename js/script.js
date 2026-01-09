@@ -57,10 +57,12 @@ axios
             // Selezioniamo l'imagine della card
             card.addEventListener("click", () => {
 
-                const img = card.querySelectorAll(".img-card");
+                const img = card.querySelector(".img-card");
+                
 
                 imgOverlay.src = img.src;
                 imgOverlay.alt = img.alt;
+                
 
                 overLay.classList.remove("d-none")
             });

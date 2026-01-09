@@ -111,9 +111,6 @@ header {
 }
 
 
-
-
-
 /* Responsive */
 @media screen and (max-width: 790px) {
 
@@ -123,6 +120,11 @@ header {
 
     #container {
         width: 75%;
+    }
+    
+    #img-size{
+        height: 450px;
+        width: 450px;
     }
 }
  
@@ -138,6 +140,11 @@ header {
 
     .title-header {
         font-size: 4.5rem;
+    }
+
+    #img-size {
+        height: 300px;
+        width: 300px;
     }
 
 }

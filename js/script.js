@@ -8,7 +8,7 @@ const containerOutput = document.getElementById("container");
 // Seleziono gli elementi da utilizzare
 const overLay = document.getElementById("show-photo")
 const button = document.getElementById("close-photo")
-const img = document.getElementById("img-size")
+const imgOverlay = document.getElementById("img-size")
 
 // Chiamiamo ajax all'endpoint
 axios
@@ -47,5 +47,28 @@ axios
 
         //Inseriamo le card in pagina 
         containerOutput.innerHTML = cardsOutput;
+        
+        // Selezioniamo le card
+        const inputCard = document.querySelectorAll(".card");
+
+        // Creiamo un evento click per far comparire overlay e un ciclo delle immagini nel cardInput
+        inputCard.forEach(card=> {
+
+            // Selezioniamo l'imagine della card
+            card.addEventListener("click", () => {
+
+                const img = card.querySelectorAll(".img-card");
+
+                imgOverlay.src = img.src;
+                imgOverlay.alt = img.alt;
+
+                overLay.classList.remove("d-none")
+            });
+        });
+
+        button.addEventListener("click", () => {
+            overLay.classList.add("d-none");
+
+        })
 
     })

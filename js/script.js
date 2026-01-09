@@ -5,10 +5,16 @@ const endPoint = "https://lanciweb.github.io/demo/api/pictures/";
 // Elemento di outputHtml
 const containerOutput = document.getElementById("container");
 
-// Chiamiamo ajax all'endpoint
-axios.get(endPoint)
+// Seleziono gli elementi da utilizzare
+const overLay = document.getElementById("show-photo")
+const button = document.getElementById("close-photo")
+const img = document.getElementById("img-size")
 
-    .then(response =>{
+// Chiamiamo ajax all'endpoint
+axios
+    .get(endPoint)
+
+    .then(response => {
 
         // output che verrà a schermo
         let cardsOutput = "";

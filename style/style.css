@@ -70,6 +70,13 @@ header {
     transform: translateX(-50%);
 }
 
+#show-photo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 777;
+}
+
 /* Responsive */
 @media screen and (max-width: 790px) {
 
